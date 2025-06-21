@@ -33,16 +33,28 @@ header {
   padding: 5rem 1rem 2rem;
   background: transparent;
   text-align: center;
-}
+/* }
 section {
   padding: 4rem 2rem;
   max-width: 800px;
   margin: auto;
   border-bottom: 1px solid #ccc;
-}
+} */
 footer {
   text-align: center;
   padding: 2rem;
   background: #3e3e3e;
   color: white;
+}
+section,
+section p,
+section ul,
+section ol,
+section h2,
+section div {
+  max-width: 800px;
+  margin: auto;
+  padding:  4rem 2rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
 }
