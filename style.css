@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
+  margin: 25px 50px;
   padding: 0;
   background-color: #fffefb;
   color: #1c1c1c;
@@ -53,8 +53,8 @@ section ol,
 section h2,
 section div {
   max-width: 800px;
-/*   margin: auto; */
-  margin: 25px 50px;
+  margin: auto;
+/*   margin: 25px 50px; */
   padding:  4rem 2rem;
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
