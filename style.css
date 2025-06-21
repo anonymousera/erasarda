@@ -53,7 +53,8 @@ section ol,
 section h2,
 section div {
   max-width: 800px;
-  margin: auto;
+/*   margin: auto; */
+  margin: 25px 50px;
   padding:  4rem 2rem;
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
