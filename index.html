@@ -4,194 +4,292 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Era Sarda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <nav>
-    <ul> 
-      <li><a href="#home">Home</a></li>
-<!--       <li><a href="#about">Background</a></li> -->
-      <li><a href="#extras">Blogs</a></li>
-      <li><a href="#interests">Research</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#contact">CV</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a href="#about" class="nav-name">Era Sarda</a>
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="home" style="
-    /* background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url('myphoto.jpg') center center / cover no-repeat; */
-    color: black;
-    min-height: 60vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  ">
-    <header style="margin-top: -5rem ;margin-bottom: 1rem; font-size: 1.5rem;">
-      <b>नमस्ते | <i>
-        <!-- <span style="color: #9b4819;"> -->
-          Hello
-      <!-- </span> -->
-      </i> | खम्मा घणी!</b>
-    </header>
-  </section>
-  
-  <!-- <section style="text-align: center; margin-top: 1rem;">
-    <p style="font-size: 1.1rem;">
-      Grounded in simplicity, I’m driven by a passion to create meaningful change in the world. 
-    </p>
-  </section> -->
+  <main>
 
-  <section>  
-  <h2><span style="color: #9b4819;">About Era Sarda</span></h2>
-  <p>Hi! I am Master's student at NYU Courant, I graduated from IIT Delhi in 2024. My pursuit
-  is fueled by a deep commitment to discovering meaningful ways to serve
-  humanity and lead a life of purpose. My major research and professional interests
-  are AI Policy, AI Ethics, and Data Science.
-  I also write on <a href="https://substack.com/@erasarda">Substack</a> occasionally, would love to hear your thoughts on my posts!
-  I'm eager to collaborate, discuss,
-  or explore project/job opportunities in this space.</p>
-  
-  <p>I am an EA Sweden (Effektiv Altruism) member and one of the organizers of <a href="https://engage.nyu.edu/organization/effective-altruism-at-nyu-all-university">EA NYU</a>. I had one of the top 30 project
-  ideas in Indian Network for Impact’s Thinking Competition 2024. </p>
-  
-  <p>I get inspired by some of the impactful work of organizations like
-  aiforanimals, effectivealtruism, sajhesapne, and many more
-  individuals. But my main motivation is my family who contribute to make several
-  lives better with whatever they have. </p>
+    <!-- ── Hero / About ──────────────────────────────── -->
+    <section id="about">
 
-  <h2><span style="color: #9b4819;">Background</span></h2>
-    <ul>
-      <li>Education: 
-        <ul>
-          <li>MS Computer Science, New York University (Courant), 2025-26 </li>
-          <li>B.Tech. Mathematics & Computing, Indian Institute of Technology Delhi, 2020-2024</li>
-        </ul>
-      </li>
-      <li>ETH Zurich - Research Internship – Social Network Analysis. Supervisor: Prof. Ulrik Brandes, PhD Meher Chaitanya</li>
-      <li>National Centre for Mathematics – Advanced Instructional School - Algorithmic Graph Theory School at IIT Indore <br>
-        The AIS was held from June to July at IIT Indore.  It was a part of ATM Schools (Advanced Training for Mathematics). 
-        I highly recommend to whoever is interested in math or theoretical cs to check out information on these schools. 
-        The curriculum, faculty, assignments, everything were great.<br> 
-        <i>NCM is an inter-institutional collaborative project of the School of Mathematics, TIFR together with the Department of Mathematics, IIT-Bombay.</i>
-      </li>
-    </ul>
-  </section>
+      <div class="hero">
+        <p class="greeting">नमस्ते &middot; Hello &middot; खम्मा घणी</p>
+        <!-- To add your photo: place myphoto.jpg in this folder and uncomment below -->
+        <!-- <img src="myphoto.jpg" alt="Era Sarda" class="hero-photo"> -->
+        <h1>Era Sarda</h1>
+        <p class="tagline">MS student at NYU Courant &mdash; AI safety, ethics, and governance.</p>
+      </div>
 
-  <section id="interests">
-    <h2><span style="color: #9b4819;">Research Interests</span></h2>
-    <p>My undergraduate work revolved mostly around theoretical computer science and core maths - social networks, game theory, computational
-      biology, functional analysis, FPT algorithms. But eventually I have found my passion in AI Safety and psychology, and I am ready to drive my career
-      around it.  Links to some of my projects can be found on github.</p>
-    <ul>
-      <li><strong>AI Policy:</strong>
-        <ul>
-          <li> <a href="https://drive.google.com/file/d/1432ADvAomvnGuBK365dHH49NxNJ51z67/view?usp=sharing">Policy Brief: Building AI Data Centers With Speed, Scale and Trust</a></li>
-          <li><a href = "https://apartresearch.com/project/21st-century-healthcare-20th-century-rules-bridging-the-ai-regulation-gap-3ooz">Policy Proposal: 21st Century Healthcare, 20th Century Rules - Bridging the AI Regulation Gap</a><li> 
-        </ul>
-        <!-- My more inclination is towards Technical AI Governance and Policy work though, 
-        but I would definitely like to work in other fields of AI Safety like Red-teaming (CAMARA Project) ,  
-        Scalable Oversight (I am very interested in improving AI debate methodology in this). -->
-      </li> 
-      <li><strong>AI Ethics:</strong>
-        I am a researcher at NYU's ML4Good Lab under Prof. Daniel Neill, and my current work involves
-        analyzing large-scale public health data to advance evidence-based suicide and overdose prevention strategies. 
-        It primarily involves causal inference and applied machine learning to uncover intersectional disparities and social determinants of health, 
-        while ensuring fairness, robustness, 
-        and clear insights into demographic risk patterns. This research supports more equitable interventions accessible to policymakers, clinicians, and communities.
-        <a href="https://github.com/anonymousera/Audit-Depression-Prediction-Model">End-to-end audit and fairness enhancement with accuracy preservation for a Kaggle-winning Depression Prediction ML System</a>
-      </li>
-      <li><strong>AI for Social Good:</strong>
-        <!-- I want to use the advancements in artificial intelligence and machine learning for solving 
-        social problems such as suicide prevention, women safety, child abuse. The book 
-        Impact of AI on Advancing Women's Safety and the report It’s Everyone’s Problem: Mainstreaming Responses to Technology-Facilitated Gender-Based Violence 
-        provide different perspectives on how AI can positively and negatively impact women’s safety. 
-        I would really love to get involved in projects relating to the issue! -->
-      </li>
-      <!-- <li><strong>Mental Health & Child Psychology:</strong> Bad mental health not only leads to financial crises, physical pains, and overall low life satisfaction, 
-        but also is a major reason for criminal behavior. “Social learning theory suggests that people who are traumatized in childhood or 
-        grow up in violent environments are more likely to mimic and internalize these behaviors and subsequently exhibit violent behavior themselves.” 
-        Given the rising crime rate in contemporary society, addressing such psychological issues from a very young age becomes very important.
-        I am interested in working on increasing the awareness about the importance of good mental health of children, 
-        and related projects. Please feel free to reach out if you are aware of/working on/want to start any such projects!</li> -->
-    </ul>
-  </section>
+      <div class="hero-links">
+        <a href="mailto:erasarda2024@gmail.com"><i class="fas fa-envelope"></i> erasarda2024@gmail.com</a>
+        <a href="https://github.com/anonymousera" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a href="http://www.linkedin.com/in/era-sarda-95a435203" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://drive.google.com/file/d/13AKDWG7GOAOcmq0ustwdjCQWc2lENw0b/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> CV</a>
+      </div>
 
+      <p>
+        I'm a Master's student at NYU Courant (graduating 2026), previously at IIT Delhi where I studied
+        Mathematics &amp; Computing. I think carefully about what AI systems should and shouldn't do,
+        who gets to decide, and what happens to people caught in the gap between policy and practice.
+        My work sits at the intersection of technical AI safety, public health, and governance.
+      </p>
+      <p>
+        At NYU's <a href="https://wp.nyu.edu/ml4good/" target="_blank" rel="noopener">ML4Good Lab</a>
+        under Prof. Daniel Neill, I analyze large-scale public health data to advance evidence-based
+        suicide and overdose prevention strategies &mdash; using causal inference and applied ML to
+        surface intersectional disparities that often go unnoticed by standard analyses.
+      </p>
+      <p>
+        I'm also one of the organizers of
+        <a href="https://engage.nyu.edu/organization/effective-altruism-at-nyu-all-university" target="_blank" rel="noopener">EA NYU</a>
+        and an EA Sweden member. One of my project ideas placed in the top 30 at Indian Network for
+        Impact's Thinking Competition 2024. I write on
+        <a href="https://substack.com/@erasarda" target="_blank" rel="noopener">Substack</a>
+        occasionally &mdash; I'd genuinely like to hear what you think.
+      </p>
+      <p class="aside">
+        Outside of work: I love travel, especially the unplanned kind. Rohtang, Varanasi, Paris,
+        Venice &mdash; the photos never quite capture it, but I'm working on that.
+      </p>
 
-  <section id="extras">
-    <h2><span style="color: #9b4819;">Hobbies (or more like passion) </span></h2>
-    <p><strong>Blogging:</strong> Here are some (very) few blogs I've written, and I aim to write more as I understand more. 
-      <ul>
-        <li> <a href = "https://forum.effectivealtruism.org/posts/u5jzRoaKabnhtRXBk/moral-education-in-the-age-of-ai-are-we-raising-good-humans?utm_campaign=post_share&utm_source=link">Moral Education in the Age of AI: Are We Raising Good Humans?</a></li>
-        <li><a href="https://erasarda.substack.com/p/cows-on-the-road-robots-on-the-street">Cows on the Road, Robots on the Street — Why AI Safety Needs Common Sense</a></li>
-        <li><a href="https://drive.google.com/file/d/1cvwJy4bNg5UPA_BhfZkyJV0iGnzXV-bO/view?usp=sharing">Stop Marginalizing, Start Associating</a> - Voice of Youth by UNICEF</li>
-        <li><a href="https://docs.google.com/document/d/1OvWNSPXvkcADRtBhRI1-tFfHXXAXFOh6YKUueefFcpg/edit?usp=sharing">The Game Behind the Game: Equality, with a Dress Code</a> - This one was on
-        FifthDimensionWeb website, which unfortunately was closed and I couldn’t retrive my blog :(. But I do want to share its almost final version. </li>
-        <li><a href="https://hul-six-stars.blogspot.com/2023/10/the-psychology-of-resistance-unveiling.html">The Psychology of Resistance: Unveiling Hidden Transcripts in Tibet</a> - This was inspired by a guest lecture by Dr. Sam Pehrson in a social psychology class. I will be honest, this blog used too much chatgpt (just for framing proper english sentences, ofcourse), but the learnings behind it were real and inspired by his work!</li>
-      </ul> 
-    <p><strong>Travel:</strong> I love traveling, specially the unplanned trips! I am not a great photographer though, which
-        un-abled me to “properly” capture those
-        magnificent moments in the mountains of
-        Rohtang, morning Ganga aarti at the
-        Dashashwamedh ghat at Varanasi, Eiffel
-        tower in Paris or the Grand Canal in Venice ;( <br> My first task before packing for the next trip
-        is to learn to click proper pictures ;D</p>
-    <!-- <p><strong>Novel Reading:</strong> I read books of multiple genres - spiritual, psychological, biographies,
-        fantasies. But my all time fav are murder mysteries. <br> I can read for hours sitting at one of the corners of my house and finish
-        any size mystery novel in a day. <br> I love writings of Dan Brown, Agatha Christie, Artemis Fowl series, and
-        many more. But my favourite series will always be the cute (atleast I think)
-        Secret Seven. <br> Highly recommend - A Good Girl’s Guide to Murder (all 3 parts), And Then
-        There Were None, Elephant’s Can Remember, Inferno, Mystery Series (by
-        Enid Blyton), Swami Vivekananda on Institution Building & Management,  How I quit Google to Sell Samosas </p> -->
-  </section>
+      <h2>Background</h2>
+      <ul class="background-list">
+        <li>
+          <strong>MS Computer Science</strong> &mdash; New York University (Courant), 2025&ndash;2026
+        </li>
+        <li>
+          <strong>B.Tech. Mathematics &amp; Computing</strong> &mdash; Indian Institute of Technology Delhi, 2020&ndash;2024
+        </li>
+        <li>
+          <strong>Research Internship</strong>, ETH Zurich &mdash; Social Network Analysis.
+          Supervised by Prof. Ulrik Brandes and PhD Meher Chaitanya.
+        </li>
+        <li>
+          <strong>Advanced Instructional School in Algorithmic Graph Theory</strong> &mdash;
+          National Centre for Mathematics / IIT Indore. Part of ATM Schools (Advanced Training for
+          Mathematics). Highly recommended for anyone interested in theoretical CS or pure math.
+        </li>
+      </ul>
+    </section>
 
+    <!-- ── Research & Projects ───────────────────────── -->
+    <section id="research">
+      <h2>Research &amp; Projects</h2>
+      <p class="section-intro">
+        My undergraduate work spanned theoretical CS and mathematics &mdash; social networks, game
+        theory, computational biology, FPT algorithms. Since then I've moved toward questions where
+        technical methods meet real policy and ethical stakes.
+      </p>
 
-  
-  <section id="resources">
-    <h2><span style="color: #9b4819;">Resource Gallery</span></h2>
-    <ul>
-      <li>TOEFL Prep (105/120): <a href="https://www.linkedin.com/pulse/110-toefl-ibt-score-5-days-mahdi-barkhordari" target="_blank">LinkedIn post</a>- It follows 
-        the old TOEFL pattern, but the resources given are still
-        very useful. Also do utilize all the free material available on ets website for the prep. They also
-        provide around 20 free sample writing questions with scoring. Also try to schedule your toefl only a
-        few days or weeks after your GRE. The practice of GRE helps here too. </li>
-      <li>GRE Prep (327/340): All official material provided by ETS. <br>
-        For Vocab section practice is the key. There always will be a limit on the number of words you can
-        remember. 500-800 words should be sufficient. Use smart-work in this case. Choose the most relevant
-        ones. I used Barron’s 333 High Frequency Words. Revise daily. Note down the words you didn’t know
-        and which came up during practice, especially those from official resources like official GRE Verbal
-        Reasoning Practice Questions book. Use elimination technique. The options can be very confusing
-        many times, even when you know the word meanings. Therefore, first give your best guess to the
-        blanks, then only see the options. DO NOT use the reverse technique. </li>
-      <li>Feel free to reach out if you want guidance on summer research internships! I will be adding
-          some tips too later. </li>
-    </ul>
-  </section>
+      <div class="project-grid">
 
-  <section id="contact" style="text-align: center; padding: 2rem;">
-    <div>
-      <a href="https://drive.google.com/file/d/13AKDWG7GOAOcmq0ustwdjCQWc2lENw0b/view?usp=sharing" target="_blank" style="font-size: 2rem; margin: 0 1rem;">
-        <i class="fab fa-file-alt"></i>
-      </a>
-      <a href="mailto:erasarda2024@gmail.com" target="_blank" style="font-size: 2rem; margin: 0 1rem;">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://github.com/anonymousera" target="_blank" style="font-size: 2rem; margin: 0 1rem;">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="http://www.linkedin.com/in/era-sarda-95a435203" target="_blank" style="font-size: 2rem; margin: 0 1rem;">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </section>
+        <article class="project-card">
+          <div class="project-tags">
+            <span class="tag">AI Ethics</span>
+            <span class="tag">Public Health</span>
+            <span class="tag">Causal Inference</span>
+          </div>
+          <h3>Suicide &amp; Overdose Prevention: Intersectional Disparities</h3>
+          <p>Analyzing large-scale public health data to advance evidence-based prevention strategies.
+             Using causal inference and applied ML to uncover demographic risk patterns that standard
+             analyses miss &mdash; with the goal of informing equitable interventions for policymakers
+             and clinicians.</p>
+          <div class="project-footer">
+            <span class="project-org">NYU ML4Good Lab &mdash; Prof. Daniel Neill</span>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-tags">
+            <span class="tag">AI Ethics</span>
+            <span class="tag">Fairness &amp; ML</span>
+          </div>
+          <h3>Fairness Audit: Depression Prediction Model</h3>
+          <p>End-to-end audit and fairness enhancement &mdash; with accuracy preservation &mdash; for
+             a Kaggle-winning depression prediction system. Examined disparate impact across demographic
+             groups and evaluated mitigation strategies.</p>
+          <div class="project-footer">
+            <a href="https://github.com/anonymousera/Audit-Depression-Prediction-Model" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-tags">
+            <span class="tag">AI Policy</span>
+            <span class="tag">Governance</span>
+          </div>
+          <h3>Policy Brief: AI Data Centers &mdash; Speed, Scale, and Trust</h3>
+          <p>A policy brief examining how AI data center deployment can be accelerated without
+             sacrificing safety standards or community trust.</p>
+          <div class="project-footer">
+            <a href="https://drive.google.com/file/d/1432ADvAomvnGuBK365dHH49NxNJ51z67/view?usp=sharing" target="_blank" rel="noopener">
+              <i class="fas fa-file-lines"></i> Brief
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tags">
+            <span class="tag">AI Policy</span>
+            <span class="tag">Healthcare</span>
+          </div>
+          <h3>Policy Proposal: 21st-Century Healthcare, 20th-Century Rules</h3>
+          <p>Submitted to Apart Research. Examines how legacy regulatory frameworks fail to account
+             for AI-driven diagnostics and clinical decision support &mdash; and what bridging that
+             gap would actually require.</p>
+          <div class="project-footer">
+            <a href="https://apartresearch.com/project/21st-century-healthcare-20th-century-rules-bridging-the-ai-regulation-gap-3ooz" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> Proposal
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── Writing ───────────────────────────────────── -->
+    <section id="writing">
+      <h2>Writing</h2>
+      <p class="section-intro">
+        On AI, ethics, policy, and occasionally other things. Also on
+        <a href="https://substack.com/@erasarda" target="_blank" rel="noopener">Substack</a>.
+      </p>
+
+      <ul class="writing-list">
+        <li>
+          <span class="writing-venue">EA Forum</span>
+          <a href="https://forum.effectivealtruism.org/posts/u5jzRoaKabnhtRXBk/moral-education-in-the-age-of-ai-are-we-raising-good-humans?utm_campaign=post_share&utm_source=link">
+            Moral Education in the Age of AI: Are We Raising Good Humans?
+          </a>
+          <p class="writing-summary">On the gap between AI literacy and moral reasoning &mdash;
+            what we're teaching children about thinking alongside machines.</p>
+        </li>
+        <li>
+          <span class="writing-venue">Substack</span>
+          <a href="https://erasarda.substack.com/p/cows-on-the-road-robots-on-the-street">
+            Cows on the Road, Robots on the Street &mdash; Why AI Safety Needs Common Sense
+          </a>
+          <p class="writing-summary">A cross-cultural lens on AI safety: what navigating chaotic
+            Indian traffic can teach us about deploying AI in uncontrolled environments.</p>
+        </li>
+        <li>
+          <span class="writing-venue">UNICEF Voice of Youth</span>
+          <a href="https://drive.google.com/file/d/1cvwJy4bNg5UPA_BhfZkyJV0iGnzXV-bO/view?usp=sharing">
+            Stop Marginalizing, Start Associating
+          </a>
+          <p class="writing-summary">On inclusion and the language we use to describe communities
+            at the margins.</p>
+        </li>
+        <li>
+          <span class="writing-venue">FifthDimensionWeb (archived)</span>
+          <a href="https://docs.google.com/document/d/1OvWNSPXvkcADRtBhRI1-tFfHXXAXFOh6YKUueefFcpg/edit?usp=sharing">
+            The Game Behind the Game: Equality, with a Dress Code
+          </a>
+          <p class="writing-summary">On dress codes as a proxy for deeper inequalities in sport.</p>
+        </li>
+        <li>
+          <span class="writing-venue">Personal blog</span>
+          <a href="https://hul-six-stars.blogspot.com/2023/10/the-psychology-of-resistance-unveiling.html">
+            The Psychology of Resistance: Unveiling Hidden Transcripts in Tibet
+          </a>
+          <p class="writing-summary">Inspired by a lecture from Dr. Sam Pehrson &mdash; on James
+            Scott's theory of "hidden transcripts" as a lens for understanding resistance.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── Resources ─────────────────────────────────── -->
+    <section id="resources">
+      <h2>Notes &amp; Resources</h2>
+      <p class="section-intro">
+        Things I found useful for standardized tests and grad school applications. Happy to share
+        more on research internships abroad &mdash; feel free to reach out.
+      </p>
+
+      <div class="resource-block">
+        <h3>GRE Prep <span class="score">327 / 340</span></h3>
+        <p>All official ETS material. For vocabulary, 500&ndash;800 words is enough &mdash; choose
+           high-frequency words rather than trying to cover everything. I used Barron's 333 High
+           Frequency Words and revised daily, noting any words that came up in official practice
+           questions. Key technique: form your own answer before looking at the options. The choices
+           are designed to mislead; the reverse approach makes that worse.</p>
+      </div>
+
+      <div class="resource-block">
+        <h3>TOEFL Prep <span class="score">105 / 120</span></h3>
+        <p>This
+          <a href="https://www.linkedin.com/pulse/110-toefl-ibt-score-5-days-mahdi-barkhordari" target="_blank" rel="noopener">LinkedIn post</a>
+          follows the old TOEFL pattern but has solid resources. Use all free material on the ETS
+          website, including the ~20 sample writing questions with official scoring rubrics. If
+          you've done GRE prep, schedule TOEFL shortly after &mdash; the verbal practice carries
+          over more than you'd expect.</p>
+      </div>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────────── -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I'm open to collaborations, conversations, and opportunities in AI safety, ethics, and
+        policy. Email is the best way to reach me.
+      </p>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:erasarda2024@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>erasarda2024@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/anonymousera" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            <span>github.com/anonymousera</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/era-sarda-95a435203" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/era-sarda-95a435203</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://substack.com/@erasarda" target="_blank" rel="noopener">
+            <i class="fas fa-newspaper"></i>
+            <span>substack.com/@erasarda</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/13AKDWG7GOAOcmq0ustwdjCQWc2lENw0b/view?usp=sharing" target="_blank" rel="noopener">
+            <i class="fas fa-file-lines"></i>
+            <span>Curriculum Vitae</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2025 Era Sarda</p>
+    <p>Era Sarda &mdash; 2026</p>
   </footer>
 
 </body>
